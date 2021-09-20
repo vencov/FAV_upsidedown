@@ -1,0 +1,4 @@
+ipywidgets==7.5.1
+matplotlib==3.2.1
+numpy==1.18.1
+sympy==1.5.1
