@@ -9,6 +9,7 @@ plt.close('all')
 
 
 
+
 # uncomment data, which you want to lead
 mat = scipy.io.loadmat('SOAE_data/soaerec_s015_Right.mat')  # measured in 2021
 # data from FAV students 2022
@@ -17,10 +18,11 @@ mat = scipy.io.loadmat('SOAE_data/soaerec_s015_Right.mat')  # measured in 2021
 #mat = scipy.io.loadmat('SOAE_data/soaerec_s034_220922_132904_Left.mat')
 #mat = scipy.io.loadmat('SOAE_data/soaerec_s034_220922_133252_Right.mat')
 #mat = scipy.io.loadmat('SOAE_data/soaerec_s035_220922_133904_Left.mat')
-mat = scipy.io.loadmat('SOAE_data/soaerec_s037_220922_135518_Left.mat')
+#mat = scipy.io.loadmat('SOAE_data/soaerec_s037_220922_135518_Left.mat')
 #mat = scipy.io.loadmat('SOAE_data/soaerec_s037_220922_135855_Right.mat')
 #mat = scipy.io.loadmat('SOAE_data/soaerec_s038_220922_140506_Left.mat')
 #mat = scipy.io.loadmat('SOAE_data/soaerec_s038_220922_140801_Right.mat')
+
 
 
 fs = int(mat['fsamp']) # sampling frequency
@@ -78,7 +80,8 @@ CalCurveIR = interp1d(fxC,np.real(Hoaemicsens),kind='cubic')
 CalCurveII = interp1d(fxC,np.imag(Hoaemicsens),kind='cubic')
 CalCurveI = CalCurveIR(fxI) + np.emath.sqrt(-1)*CalCurveII(fxI)
 
-CalSpect = SpI/(CalCurveI*GainMicA);
+#CalSpect = SpI/(CalCurveI*GainMicA);
+CalSpect = SpI/(0.003*10**(40/20))
 
 fig,ax = plt.subplots(figsize=(15,15))
 ax.plot(fxI,20*np.log10(CalSpect/(np.sqrt(2)*2e-5)))
