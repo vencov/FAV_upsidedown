@@ -1,0 +1,15 @@
+Subject ID: s004
+Date: 20250430_153146
+Ear, Frequency (Hz), Level (dB re abs. threshold)
+Left Ear, 250, -20.0
+Left Ear, 500, -20.0
+Left Ear, 1000, -5.0
+Left Ear, 2000, -10.0
+Left Ear, 4000, 0.0
+Left Ear, 8000, -5.0
+Right Ear, 250, -10.0
+Right Ear, 500, -20.0
+Right Ear, 1000, 0.0
+Right Ear, 2000, -5.0
+Right Ear, 4000, -5.0
+Right Ear, 8000, 0.0
