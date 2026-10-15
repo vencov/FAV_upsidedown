@@ -1,0 +1,9 @@
+Subject ID: fav26_1
+Date: 20261015_112932
+Ear, Frequency (Hz), Level (dB re abs. threshold)
+Right Ear, 1000, 0.0
+Right Ear, 1500, 0.0
+Right Ear, 2000, 0.0
+Right Ear, 3000, 0.0
+Right Ear, 4000, -10.0
+Right Ear, 6000, -10.0
